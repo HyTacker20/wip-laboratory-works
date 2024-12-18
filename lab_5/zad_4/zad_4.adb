@@ -7,7 +7,7 @@ procedure Find_Zero is
 
    procedure Find_Zero (F : Functype; A, B, Eps : Float) is
       Start  : Float := A;
-      End_   : Float := B;
+      The_End   : Float := B;
       Middle : Float;
       Result : Float;
    begin
@@ -16,20 +16,20 @@ procedure Find_Zero is
          return;
       end if;
 
-      while abs(End_ - Start) >= Eps loop
-         Middle := (Start + End_) / 2.0;
+      while abs(The_End - Start) >= Eps loop
+         Middle := (Start + The_End) / 2.0;
 
          if F(Middle) = 0.0 then
             Put_Line ("FOUND! " & Float'Image (Middle));
             return;
          elsif F(Start) * F(Middle) < 0.0 then
-            End_ := Middle;
+            The_End := Middle;
          else
             Start := Middle;
          end if;
       end loop;
 
-      Put_Line ("Zero = " & Float'Image ((Start + End_) / 2.0));
+      Put_Line ("Zero = " & Float'Image ((Start + The_End) / 2.0));
    end Find_Zero;
 
    function Cos_Half (X : Float) return Float is

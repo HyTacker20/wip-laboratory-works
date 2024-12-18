@@ -31,7 +31,12 @@ double cos_half(double x) {
     return cos(x / 2);
 }
 
+double kwadrat(double x){
+    return x*x - 1;
+}
+
 int main() {
     findzero(cos_half, 2, 4, 0.001);
+    findzero(kwadrat, 0, 3, 0.001);
     return 0;
 }

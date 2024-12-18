@@ -24,9 +24,6 @@ def findzero(f, a, b, eps):
     return result
 
 def cos_half(x):
-    """
-    Функція cos(x / 2).
-    """
     return math.cos(x / 2)
 
 def main():

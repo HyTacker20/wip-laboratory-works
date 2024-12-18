@@ -1,3 +1,6 @@
+with Ada.Text_IO; use Ada.Text_IO;
+
+
 package body list is
 
    function isEmpty (l : ListT) return Boolean is
@@ -102,7 +105,11 @@ package body list is
       end if;
 
       if i = 1 then
-         Pop (l);
+         declare
+            temp : Integer := Pop(l);
+         begin
+            null;
+         end;
       else
          for k in 1 .. i - 1 loop
             prev := current;
@@ -120,17 +127,22 @@ package body list is
    procedure Print (l : ListT) is
       n : NodePtr := l.first;
    begin
+      Put_Line("");
       while n /= null loop
-         Put (n.elem'Image & " ");
+         Put_Line(n.elem'Image & " ");
          n := n.next;
       end loop;
-      Put_Line ("(" & l.length'Image & ")");
+      Put_Line("(" & l.length'Image & ")");
    end Print;
 
    procedure Clean (l : in out ListT) is
    begin
       while not isEmpty (l) loop
-         Pop (l);
+         declare
+            temp : Integer := Pop(l);
+         begin
+            null;
+         end;
       end loop;
    end Clean;
 
