@@ -65,6 +65,7 @@ begin
          exception
             when Constraint_Error =>
                Put_Line ("Error - bad index!");
+               Skip_Line;
          end;
 
       elsif command = "insert" then
