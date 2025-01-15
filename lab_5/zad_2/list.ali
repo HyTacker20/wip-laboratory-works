@@ -1,0 +1,166 @@
+V "GNAT Lib v13"
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_DEALLOCATION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+
+U list%b		list.adb		77b3e952 NE OO PK IL
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+
+U list%s		list.ads		7b75c460 EE NE OO PK IL
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.unchecked_deallocation%s
+
+D ada.ads		20240521074738 76789da1 ada%s
+D a-assert.ads		20240521074737 ba465f5c ada.assertions%s
+D a-except.ads		20240521074738 2a7d8d70 ada.exceptions%s
+D a-ioexce.ads		20240521074738 40018c65 ada.io_exceptions%s
+D a-numeri.ads		20240521074738 84bea7a3 ada.numerics%s
+D a-nubinu.ads		20240521074738 93f1f3d1 ada.numerics.big_numbers%s
+D a-nbnbig.ads		20240521074738 711e0174 ada.numerics.big_numbers.big_integers_ghost%s
+D a-stream.ads		20240521074738 119b8fb3 ada.streams%s
+D a-string.ads		20240521074738 90ac6797 ada.strings%s
+D a-sttebu.ads		20240521074738 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20240521074738 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20240521074738 9eaa38c6 ada.tags%s
+D a-textio.ads		20240521074738 5c2c6153 ada.text_io%s
+D a-unccon.ads		20240521074738 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20240521074738 c3a8ac65 ada.unchecked_deallocation%s
+D interfac.ads		20240521074738 15f799c2 interfaces%s
+D i-cstrea.ads		20240521074738 e53d8b8e interfaces.c_streams%s
+D list.ads		20241217211111 b8dd6805 list%s
+D list.adb		20241217213233 9342e004 list%b
+D system.ads		20240521074738 a4968d35 system%s
+D s-assert.ads		20240521074738 9c4520c7 system.assertions%s
+D s-casuti.ads		20240521074738 cf13d755 system.case_util%s
+D s-conca2.ads		20240521074738 b5fb73f7 system.concat_2%s
+D s-conca3.ads		20240521074738 8a7a19a2 system.concat_3%s
+D s-crtl.ads		20240521074738 8a0692f8 system.crtl%s
+D s-exctab.ads		20240521074738 91bef6ef system.exception_table%s
+D s-ficobl.ads		20240521074738 dc5161d4 system.file_control_block%s
+D s-imagei.ads		20240521074738 c707dfd0 system.image_i%s
+D s-imgint.ads		20240521074738 d4a52a9b system.img_int%s
+D s-parame.ads		20240904142654 1f39ba92 system.parameters%s
+D s-putima.ads		20240521074738 17291fe4 system.put_images%s
+D s-secsta.ads		20240521074738 578279f5 system.secondary_stack%s
+D s-soflin.ads		20240521074738 df77073e system.soft_links%s
+D s-stache.ads		20240521074738 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20240521074738 1c9580f6 system.standard_library%s
+D s-stoele.ads		20240521074738 ab5468e4 system.storage_elements%s
+D s-stoele.adb		20240521074738 8f5a9db6 system.storage_elements%b
+D s-traent.ads		20240521074738 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20240521074738 fa2a7f59 system.unsigned_types%s
+D s-valint.ads		20240521074738 1f610d7a system.val_int%s
+D s-valuns.ads		20240521074738 e8a1f424 system.val_uns%s
+D s-valuti.ads		20240521074738 fcd603d8 system.val_util%s
+D s-valuei.ads		20240521074738 11081e09 system.value_i%s
+D s-vaispe.ads		20240521074738 44130d39 system.value_i_spec%s
+D s-valueu.ads		20240521074738 18770347 system.value_u%s
+D s-vauspe.ads		20240521074738 a67b2f28 system.value_u_spec%s
+D s-wchcon.ads		20240521074738 d9032363 system.wch_con%s
+D s-widuns.ads		20240521074738 866a5800 system.wid_uns%s
+D s-widthu.ads		20240521074738 b32f15e2 system.width_u%s
+G a e
+G c Z s b [isempty list 6 13 none]
+G c Z s b [pop list 7 13 none]
+G c Z s b [push list 8 14 none]
+G c Z s b [append list 9 14 none]
+G c Z s b [get list 11 13 none]
+G c Z s b [put list 12 14 none]
+G c Z s b [insert list 13 14 none]
+G c Z s b [delete list 14 14 none]
+G c Z s b [print list 16 14 none]
+G c Z s b [clean list 17 14 none]
+G c Z s b [length list 18 13 none]
+G c Z s s [nodeIP list 23 9 none]
+G c Z s s [free list 34 14 none]
+G c Z s s [listtIP list 28 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 18|1r6 35r20 19|1r6 1r23
+X 13 a-textio.ads
+58K13*Text_IO 787e16 19|1w10 1r27
+566U14*Put_Line 19|130s7 132s10 135s7
+X 15 a-uncdea.ads
+20u15*Unchecked_Deallocation 18|1w10 35r24
+X 18 list.ads
+3K9*list 21E9 36l5 36e9 19|4b14 154l5 154t9
+4R9*ListT 6r26 7r29 8r31 9r33 11r22 12r30 13r33 14r33 16r25 17r32 18r25 28c9
+. 32e14 19|6r26 11r29 24r31 36r33 49r22 61r30 73r33 99r33 127r25 138r32 149r25
+6V13*isEmpty{boolean} 6>22 19|6b13 9l8 9t15 140s17
+6r22 l{4R9} 19|6b22 8r14
+7V13*Pop{integer} 7=18 19|11b13 22l8 22t11 109s31 142s31
+7r18 l{4R9} 19|11b18 12r22 15m7 16r10 17m10 20m7 20r19
+8U14*Push 8=20 8>38 19|24b14 34l8 34t12 85s10
+8r20 l{4R9} 19|24b20 28r17 29m7 30r10 31m10 33m7 33r19
+8i38 e{integer} 19|24b38 27r17
+9U14*Append 9=22 9>40 19|36b14 47l8 47t14 87s10
+9r22 l{4R9} 19|36b22 40r10 41m10 43m10 43r10 45m7 46m7 46r19
+9i40 e{integer} 19|36b40 39r17
+11V13*Get{integer} 11>18 11>29 19|49b13 59l8 59t11
+11r18 l{4R9} 19|49b18 50r22 52r23
+11i29 i{integer} 19|49b29 52r10 52r19 55r21
+12U14*Put 12=19 12>37 12>50 19|61b14 71l8 71t11
+12r19 l{4R9} 19|61b19 62r22 64r23
+12i37 i{integer} 19|61b37 64r10 64r19 67r21
+12i50 e{integer} 19|61b50 70r17
+13U14*Insert 13=22 13>40 13>53 19|73b14 97l8 97t14
+13r22 l{4R9} 19|73b22 75r28 78r23 85m16 86r17 87m18 95m10 95r22
+13i40 i{integer} 19|73b40 78r10 78r19 84r10 86r13 89r24
+13i53 e{integer} 19|73b53 82r17 85r19 87r21
+14U14*Delete 14=22 14>40 19|99b14 125l8 125t14
+14r22 l{4R9} 19|99b22 100r28 103r23 109m35 109r35 119r23 120m13 123m10 123r22
+14i40 i{integer} 19|99b40 103r10 103r19 107r10 114r24
+16U14*Print 16>21 19|127b14 136l8 136t13
+16r21 l{4R9} 19|127b21 128r22 135r22
+17U14*Clean 17=21 19|138b14 147l8 147t13
+17r21 l{4R9} 19|138b21 140r26 142m35 142r35
+18V13*Length{integer} 18>21 19|149b13 152l8 152t14
+18r21 l{4R9} 19|149b21 151r14
+21R9 Node 22r27 23c9 26e14 35r48 19|25r26 37r26 74r26
+22P9 NodePtr(21R9) 25r14 29r15 30r15 35r54 19|12r11 25r11 37r11 50r11 62r11
+. 74r11 75r17 76r14 100r17 101r14 128r11
+24i7*elem{integer} 19|13r24 27m9 39m9 58r16 70m9 82m9 132r21
+25p7*next{22P9} 19|15r20 28m9 43m17 56r17 68r17 91r32 93m15 94m12 116r32
+. 118m15 118r31 133r17
+29p7*first{22P9} 19|8r16 12r24 15m9 16r12 28r19 29m9 40r12 41m12 50r24 62r24
+. 75r30 100r30 128r24
+30p7*last{22P9} 19|17m12 30r12 31m12 43r12 45m9 119r25 120m15
+31i7*length{integer} 19|20m9 20r21 33m9 33r21 46m9 46r21 52r25 64r25 78r25
+. 86r19 95m12 95r24 103r25 123m12 123r24 135r24 151r16
+34U14 Free[15|20] 19|19s7 122s10
+X 19 list.adb
+12p7 n{18|22P9} 13r22 15r18 19m13 19r13
+13i7 e{integer} 21r14
+25p7 n{18|22P9} 27r7 28r7 29r18 31r20
+37p7 n{18|22P9} 39r7 41r21 43r25 45r17
+50p7 n{18|22P9} 56m10 56r15 58r14
+55i11 k{integer}
+62p7 n{18|22P9} 68m10 68r15 70r7
+67i11 k{integer}
+74p7 n{18|22P9} 82r7 93r23 94r10
+75p7 current{18|22P9} 90r21 91m13 91r24 94r20
+76p7 prev{18|22P9} 90m13 93r10
+89i14 k{integer}
+100p7 current{18|22P9} 115r21 116m13 116r24 118r23 119r13 122m16 122r16
+101p7 prev{18|22P9} 115m13 118r10 120r23
+109i13 temp{integer}
+114i14 k{integer}
+128p7 n{18|22P9} 131r13 132r19 133m10 133r15
+142i13 temp{integer}
+
